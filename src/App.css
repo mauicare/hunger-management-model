@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  line-height: 1.6;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.app-main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: #2d6a4f;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #d8f3dc;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.scale {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.scale-item {
+  flex: 1;
+  min-width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 0.25rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.scale-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.scale-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  min-height: 1rem;
+}
+
+.level-1  { background: #d62828; color: white; }
+.level-2  { background: #e85d04; color: white; }
+.level-3  { background: #f48c06; color: white; }
+.level-4  { background: #faa307; color: #1a202c; }
+.level-5  { background: #e9ecef; color: #1a202c; }
+.level-6  { background: #b7e4c7; color: #1a202c; }
+.level-7  { background: #74c69d; color: #1a202c; }
+.level-8  { background: #52b788; color: white; }
+.level-9  { background: #40916c; color: white; }
+.level-10 { background: #1b4332; color: white; }
+
+.strategies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.strategy {
+  background: #f0fdf4;
+  border: 1px solid #d8f3dc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.strategy h3 {
+  color: #2d6a4f;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.strategy p {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.app-footer {
+  background: #2d6a4f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
